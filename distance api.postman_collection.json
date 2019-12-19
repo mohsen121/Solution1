@@ -1,0 +1,192 @@
+{
+	"info": {
+		"_postman_id": "239c2b2b-61d3-4183-8e58-1cb1b72fb5b1",
+		"name": "distance api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"test@example.com\",\r\n  \"password\": \"test123\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/Account/Login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Account",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"user@example.com\",\r\n  \"password\": \"string123\",\r\n  \"name\": \"test user\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/Account/Register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Account",
+						"Register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Profile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyNzBmMjNlNS0yZGE4LTQ1YmQtYTA1OC1mNGQzZmYxNzJlZGIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6Ijc5NzQ2OWNkLThmODYtNDI2Yy1iMjZhLWY5ZmYyNzdmYTg5OCIsImV4cCI6MTYwODI5MDIyMywiaXNzIjoiaHR0cDovL216MTIxLm1lIiwiYXVkIjoiaHR0cDovL216MTIxLm1lIn0.N6wdMPl4AwiFBjbfv16JtXkcHRgWwrLP1DS0uN4AymQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/Account/Profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Account",
+						"Profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Calculate Distance",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyNzBmMjNlNS0yZGE4LTQ1YmQtYTA1OC1mNGQzZmYxNzJlZGIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6Ijc5NzQ2OWNkLThmODYtNDI2Yy1iMjZhLWY5ZmYyNzdmYTg5OCIsImV4cCI6MTYwODI5MDIyMywiaXNzIjoiaHR0cDovL216MTIxLm1lIiwiYXVkIjoiaHR0cDovL216MTIxLm1lIn0.N6wdMPl4AwiFBjbfv16JtXkcHRgWwrLP1DS0uN4AymQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"lat1\": 33.997,\r\n  \"lon1\": 51.442,\r\n  \"lat2\": 32.652,\r\n  \"lon2\": 51.675\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/Distance/Calculate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Distance",
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Distance History",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyNzBmMjNlNS0yZGE4LTQ1YmQtYTA1OC1mNGQzZmYxNzJlZGIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6Ijc5NzQ2OWNkLThmODYtNDI2Yy1iMjZhLWY5ZmYyNzdmYTg5OCIsImV4cCI6MTYwODI5MDIyMywiaXNzIjoiaHR0cDovL216MTIxLm1lIiwiYXVkIjoiaHR0cDovL216MTIxLm1lIn0.N6wdMPl4AwiFBjbfv16JtXkcHRgWwrLP1DS0uN4AymQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"page\":1,\n\t\"count\":10\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/Distance/History",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Distance",
+						"History"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -3,15 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29324.140
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistanceApi.Application", "DistanceApi.Application\DistanceApi.Application.csproj", "{6FA9181F-E056-47D8-99F4-4EEE15BEBB72}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DistanceApi.Application", "DistanceApi.Application\DistanceApi.Application.csproj", "{6FA9181F-E056-47D8-99F4-4EEE15BEBB72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistanceApi.Common", "DistanceApi.Common\DistanceApi.Common.csproj", "{208AB07C-0211-4EB6-83EA-EF162286BAF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DistanceApi.Common", "DistanceApi.Common\DistanceApi.Common.csproj", "{208AB07C-0211-4EB6-83EA-EF162286BAF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistanceApi.Domain", "DistanceApi.Domain\DistanceApi.Domain.csproj", "{6C5F43B8-BD12-4C24-96FA-0570E2CC0EF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DistanceApi.Domain", "DistanceApi.Domain\DistanceApi.Domain.csproj", "{6C5F43B8-BD12-4C24-96FA-0570E2CC0EF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistanceApi.Persistence", "DistanceApi.Persistence\DistanceApi.Persistence.csproj", "{5CFA2F6C-13EE-46D9-99F3-F8DA18B51F70}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DistanceApi.Persistence", "DistanceApi.Persistence\DistanceApi.Persistence.csproj", "{5CFA2F6C-13EE-46D9-99F3-F8DA18B51F70}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistanceApi.WebApi", "DistanceApi.WebApi\DistanceApi.WebApi.csproj", "{4C283025-34C8-4987-9E82-F9262CD8CDEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DistanceApi.WebApi", "DistanceApi.WebApi\DistanceApi.WebApi.csproj", "{4C283025-34C8-4987-9E82-F9262CD8CDEE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Postman Collection", "Postman Collection", "{36393B75-D676-45B2-8764-1CED0FCD1DA6}"
+	ProjectSection(SolutionItems) = preProject
+		distance api.postman_collection.json = distance api.postman_collection.json
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
