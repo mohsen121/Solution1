@@ -26,7 +26,7 @@ namespace DistanceApi.WebApi.Controllers
         [HttpPost]
         public async Task<ActionResult<UserDistanceListVm>> History([FromBody]GetUserDistancesListQuery query)
         {
-            var result = await Mediator.Send(query);
+            var result = await Mediator.Send(query ?? new GetUserDistancesListQuery());
 
             return Ok(result);
         }
