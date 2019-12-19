@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.0.0" />
+    <PackageReference Include="NSwag.AspNetCore" Version="13.1.2" />
+    <PackageReference Include="NSwag.Core" Version="13.1.2" />
+    <PackageReference Include="NSwag.MSBuild" Version="13.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DistanceApi.Application\DistanceApi.Application.csproj" />
+    <ProjectReference Include="..\DistanceApi.Common\DistanceApi.Common.csproj" />
+    <ProjectReference Include="..\DistanceApi.Domain\DistanceApi.Domain.csproj" />
+    <ProjectReference Include="..\DistanceApi.Persistence\DistanceApi.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>
